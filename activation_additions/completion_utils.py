@@ -362,7 +362,7 @@ def print_n_comparisons(
     addition_location: str = "front",
     res_stream_slice: slice = slice(None),
     **kwargs,
-) -> None:
+):
     """Pretty-print generations from `model` using the appropriate hook
     functions.
 
@@ -417,3 +417,5 @@ def print_n_comparisons(
     results: pd.DataFrame = pd.concat(data_frames, ignore_index=True)
 
     pretty_print_completions(results=results)
+
+    return results
